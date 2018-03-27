@@ -2,6 +2,7 @@ jobs:
 
   - name: openssl_tester
     type: runSh
+    allowPublicAccess: true
     steps:
       - TASK:
           name: openssl custom image
