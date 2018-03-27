@@ -1,7 +1,5 @@
 name: openssl_tester
 type: runSh
-runtime:
-  nodePool: u16custom
 steps:
   - TASK:
       name: openssl custom image
