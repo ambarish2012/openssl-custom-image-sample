@@ -10,9 +10,4 @@ steps:
           imageTag: latest
       script:
         - openssl version
-  - TASK:
-      name: openssl default image
-      runtime:
-        container: true
-      script:
-        - openssl version
+        
