@@ -1,13 +1,15 @@
-name: openssl_tester
-type: runSh
-steps:
-  - TASK:
-      name: openssl custom image
-      runtime:
-        container: true
-        options:
-          imageName: gvancuts/clearlinux-acrn-build
-          imageTag: latest
-      script:
-        - openssl version
-        
+jobs:
+
+  - name: openssl_tester
+    type: runSh
+    steps:
+      - TASK:
+          name: openssl custom image
+          runtime:
+            container: true
+            options:
+              imageName: gvancuts/clearlinux-acrn-build
+              imageTag: latest
+          script:
+            - openssl version
+
